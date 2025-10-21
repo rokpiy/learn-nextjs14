@@ -6,7 +6,7 @@ import { Suspense } from "react";
 export default async function MovieDetail({ params: {id}}: { params: { id: string } }) {
     
     return (
-              <div>
+        <div>
             <h3>Movie detail page</h3>
             <Suspense fallback={<div>Loading movie info...</div>}>
                 <MovieInfo id={id} />

@@ -1,13 +1,20 @@
 "use client";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import styles from "../styles/navigation.module.css";
+
 export default function Navigation(){
     const pathname = usePathname();
     return (
-        <nav>
-            <Link href="/">Home</Link> {pathname === "/" ? "v" : ""}
-            <Link href="/about-us">About Us</Link> {pathname === "/about-us" ? "v" : ""}
-            <Link href="/not-found">Not Found</Link> {pathname === "/not-found" ? "v" : ""}
+        <nav className={styles.nav}>
+            <ul>
+                <li>
+                    <Link href="/" className={pathname === "/" ? styles.active : ""}>Home</Link>
+                </li>
+                <li>
+                    <Link href="/about-us" className={pathname === "/about-us" ? styles.active : ""}>About Us</Link>
+                </li>
+            </ul>
         </nav>
     )
-}
+} 

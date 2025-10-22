@@ -1,0 +1,41 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.vote_average {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.overview {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.genres {
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
+}
+
+.homepage {
+    padding: 12px 24px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    width: fit-content;
+    transition: all 0.2s ease-in-out;
+}
+
+.homepage:hover {
+    background-color: #404040;
+    transform: scale(1.05);
+}
+

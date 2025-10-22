@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.poster {
+    border-radius: 20px;
+    max-width: 70%;
+    place-self: start center;
+    position: sticky;
+    top: 120px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+}
+
+.navLink {
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.navLink:hover {
+    background-color: #404040;
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: #505050;
+    font-weight: bold;
+}
+

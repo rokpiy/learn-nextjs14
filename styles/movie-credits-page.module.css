@@ -1,0 +1,120 @@
+.noData {
+    padding: 40px;
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.sectionTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.productionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoLabel {
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.infoValue {
+    font-size: 16px;
+    color: white;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2d2d2d;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.companyLogo {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+
+.companyName {
+    font-size: 14px;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.noPhoto {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.character {
+    font-size: 12px;
+    color: #999;
+}
+

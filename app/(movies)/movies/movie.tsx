@@ -11,9 +11,8 @@ export default function Movie({title, poster_path, id}: {title: string, poster_p
     }
     return (
         <div className={styles.movie}>
-            <h3>{title}</h3>
             <img src={poster_path} alt={title} onClick={onClick}/>
-            <Link href={`/movies/${id}`}>View Details</Link>
+            <h3>{title}</h3>
         </div>
     )
 }

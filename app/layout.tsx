@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import "../styles/global.css";
+import "@/styles/global.css";
+import Navigation from "@/components/navigation";
 
 export const metadata :Metadata = {
     title: {
@@ -7,8 +8,6 @@ export const metadata :Metadata = {
         default: 'Next Movies',
       },
   }
-
-import Navigation from "../components/navigation";
 
 export default function RootLayout({
   children,

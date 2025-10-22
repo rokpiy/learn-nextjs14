@@ -1,18 +1,11 @@
 import Link from "next/link";
-import Movie from "../(movies)/movies/movie";
-import styles from "../../styles/home.module.css";
-import { API_URL } from "../../constants";
+import Movie from "@/app/(movies)/movies/movie";
+import styles from "@/styles/home.module.css";
+import { getMovies } from "@/lib/api";
 
 export const metadata = {
   title: 'Home',
 };
-
-async function getMovies(){
-  //wait new Promise(resolve => setTimeout(resolve, 1000));
-  const response = await fetch(API_URL);
-  const json = await response.json();
-  return json;
-}
 
 export default async function HomePage(){
   const movies = await getMovies();

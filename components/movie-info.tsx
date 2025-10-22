@@ -1,12 +1,5 @@
-"use client";
-import styles from "../styles/movie-info.module.css";
-import { API_URL } from "../constants";
-
-export async function getMovie(id: string) {
-    const response = await fetch(`${API_URL}/${id}`);
-    return response.json();
-}
-
+import styles from "@/styles/movie-info.module.css";
+import { getMovie } from "@/lib/api";
 
 export default async function MovieInfo({ id }: { id: string }) {
     const movie = await getMovie(id);
@@ -22,3 +15,4 @@ export default async function MovieInfo({ id }: { id: string }) {
         </div>
     )
 }
+

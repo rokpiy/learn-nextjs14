@@ -1,11 +1,5 @@
-"use client";
-import {API_URL} from "../constants";
-import styles from "../styles/movie-vidoes.module.css";
-
-async function getVideos(id: string) {
-    const response = await fetch(`${API_URL}/${id}/videos`);
-    return response.json();
-}
+import styles from "@/styles/movie-vidoes.module.css";
+import { getVideos } from "@/lib/api";
 
 export default async function MovieVideos({ id }: { id: string }) {
     const videos = await getVideos(id);
@@ -21,3 +15,4 @@ export default async function MovieVideos({ id }: { id: string }) {
         ))}
     </div>
 }
+

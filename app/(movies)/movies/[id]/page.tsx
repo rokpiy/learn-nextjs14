@@ -1,5 +1,5 @@
-import { getMovie } from "../../../../components/movie-info";
-import styles from "../../../../styles/movie-info-page.module.css";
+import { getMovie } from "@/lib/api";
+import styles from "@/styles/movie-info-page.module.css";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;

@@ -1,10 +1,5 @@
-import { API_URL } from "../../../../../constants";
-import styles from "../../../../../styles/movie-videos-page.module.css";
-
-async function getVideos(id: string) {
-    const response = await fetch(`${API_URL}/${id}/videos`);
-    return response.json();
-}
+import { getVideos } from "@/lib/api";
+import styles from "@/styles/movie-videos-page.module.css";
 
 export default async function VideosPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;

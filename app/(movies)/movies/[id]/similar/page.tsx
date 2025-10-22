@@ -1,11 +1,6 @@
-import { API_URL } from "../../../../../constants";
-import Movie from "../../../../(movies)/movies/movie";
-import styles from "../../../../../styles/movie-similar-page.module.css";
-
-async function getSimilarMovies(id: string) {
-    const response = await fetch(`${API_URL}/${id}/similar`);
-    return response.json();
-}
+import { getSimilarMovies } from "@/lib/api";
+import Movie from "@/app/(movies)/movies/movie";
+import styles from "@/styles/movie-similar-page.module.css";
 
 export default async function SimilarPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;

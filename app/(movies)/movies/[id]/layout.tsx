@@ -1,6 +1,6 @@
-import { getMovie } from "../../../../components/movie-info";
-import styles from "../../../../styles/movie-detail-layout.module.css";
-import Navigation from "../../../../components/movie-navigation";
+import { getMovie } from "@/lib/api";
+import styles from "@/styles/movie-detail-layout.module.css";
+import Navigation from "@/components/movie-navigation";
 
 export default async function MovieDetailLayout({
     children,

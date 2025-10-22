@@ -1,11 +1,5 @@
-import { API_URL } from "../../../../../constants";
-import { getMovie } from "../../../../../components/movie-info";
-import styles from "../../../../../styles/movie-credits-page.module.css";
-
-async function getCredits(id: string) {
-    const response = await fetch(`${API_URL}/${id}/credits`);
-    return response.json();
-}
+import { getMovie, getCredits } from "@/lib/api";
+import styles from "@/styles/movie-credits-page.module.css";
 
 export default async function CreditsPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;

@@ -1,4 +1,4 @@
-import { API_URL } from "../../../../constants";
+import { API_URL } from "../../../../../constants";
 import { getMovie } from "../../../../../components/movie-info";
 import styles from "../../../../../styles/movie-credits-page.module.css";
 
